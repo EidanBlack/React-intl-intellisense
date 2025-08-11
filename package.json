@@ -2,7 +2,7 @@
   "name": "react-intl-intellisense",
   "displayName": "react-intl-intellisense",
   "description": "Hover and go-to-definition for react-intl keys",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -26,8 +26,8 @@
     "configuration": {
       "title": "React Intl Intellisense",
       "properties": {
-        "intlHelper.translationFile": {
-          "type": "string",
+        "intlHelper.translationFiles": {
+          "type": "array",
           "default": "src/lang/locales/es_ES.ts",
           "description": "Ruta relativa al archivo de traducciones (es_ES.ts)"
         }
