@@ -33,7 +33,6 @@ It provides:
 
 To use the extension, configure the list of translation files in your `settings.json` (preferably workspace settings):  
 
-```json
 {
   "intlHelper.translationFiles": [
     "src/lang/locales/es_ES.ts",
@@ -42,16 +41,15 @@ To use the extension, configure the list of translation files in your `settings.
 }
 
 ## FAQ / Common Issues
+    Autocomplete or hover not working?
+        - Check that the paths in "intlHelper.translationFiles" are correct and relative to your workspace.
 
-**Autocomplete or hover not working?**
-    - Check that the paths in "intlHelper.translationFiles" are correct and relative to your workspace.
+        - Make sure the translation files exist and export an object correctly.
 
-    - Make sure the translation files exist and export an object correctly.
+        - Reload the VS Code window (Ctrl+Shift+P > Reload Window) after configuration changes.
 
-    - Reload the VS Code window (Ctrl+Shift+P > Reload Window) after configuration changes.
-
-**Does it support other formats?**
-    - Currently only .ts files exporting an object literal via default export are supported.
+    Does it support other formats?
+        - Currently only .ts files exporting an object literal via default export are supported.
 
 ## Repository
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/EidanBlack/React-intl-intellisense)
