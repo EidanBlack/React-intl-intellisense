@@ -25,6 +25,10 @@
       {
         "command": "react-intl-intellisense.test",
         "title": "Test React Intl Intellisense"
+      },
+      {
+        "command": "react-intl-intellisense.checkDuplicates",
+        "title": "Verificar valores duplicados en traducciones"
       }
     ],
     "configuration": {
@@ -32,8 +36,18 @@
       "properties": {
         "intlHelper.translationFiles": {
           "type": "array",
-          "default": "src/lang/locales/es_ES.ts",
-          "description": "Ruta relativa al archivo de traducciones (es_ES.ts)"
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "src/lang/locales/es_ES.ts"
+          ],
+          "description": "Rutas relativas a los archivos de traducciones"
+        },
+        "intlHelper.checkDuplicatesOnLoad": {
+          "type": "boolean",
+          "default": true,
+          "description": "Verificar automáticamente valores duplicados al cargar los archivos de traducción"
         }
       }
     }
